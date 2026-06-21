@@ -1,17 +1,32 @@
 # Simple Linear Regression – Marketing ROI Analysis
 
 ## Project Overview
-This project analyzes a marketing dataset to build a Simple Linear Regression model. The goal is to identify which marketing channel (TV, Radio, or Social Media) has the strongest impact on Sales, build a predictive model, validate regression assumptions, and provide actionable business recommendations for budget allocation.
+This project performs a **Simple Linear Regression** analysis on marketing data to evaluate the return on investment (ROI) of different advertising channels (TV, Radio, and Social Media) on Sales. 
 
-## Project Goals
-- Load, clean, and explore the marketing dataset.
-- Perform Exploratory Data Analysis (EDA) to visualize relationships.
-- Identify the strongest predictor of Sales.
-- Implement an Ordinary Least Squares (OLS) regression model using `statsmodels`.
-- Verify key assumptions (Linearity, Normality, Homoscedasticity) via diagnostic plots.
-- Interpret the results (R-squared, coefficients, p-values) to recommend ROI-driven marketing strategies.
+The analysis includes:
+- Data loading and cleaning
+- Exploratory Data Analysis (EDA) with visualizations
+- Identification of the best predictor variable
+- Building an OLS regression model using `statsmodels`
+- Checking regression assumptions (Linearity, Normality, Homoscedasticity)
+- Statistical interpretation and business recommendations
+
+**Goal**: Recommend the marketing channel with the strongest ROI impact for budget allocation.
+
+---
+
+## Dataset
+- **File**: `marketing_and_sales_data_evaluate_lr.csv`
+- Contains marketing spend across TV, Radio, Social Media, and corresponding Sales figures.
+
+---
 
 ## Environment Setup
-To run this notebook, you need Python installed along with the following libraries:
+
+### Prerequisites
+- Python 3.8+
+- Google Colab (recommended) or Jupyter Notebook
+
+### Required Libraries
 ```bash
-pip install pandas numpy matplotlib seaborn statsmodels
+pip install pandas numpy matplotlib seaborn statsmodels scipy
